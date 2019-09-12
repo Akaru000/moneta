@@ -12,10 +12,17 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <v-btn class="title" nuxt to="login" text>{{ account | name }}様</v-btn>
+        <h1>moneta</h1>
+      </v-toolbar-items>
+      <v-spacer></v-spacer>
+      <v-toolbar-items>
+        <center>
+        <p class="title" text>{{ account | name }}様</p>
+        </center>
       </v-toolbar-items>
     </v-app-bar>
     <v-content>
+      <center class="title" text>{{ account | name }}様 ようこそ</center>
       <v-container fluid>
         <v-layout align-start justify-center>
           <v-flex xs12 sm12 md8 xl8>
@@ -26,6 +33,8 @@
       <code v-if="debug">{{ $store.state }}</code>
     </v-content>
   </v-app>
+ 
+
 </template>
 
 <script>
